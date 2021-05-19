@@ -56,8 +56,10 @@ URL: <https://www.amazon.co.uk/s?k=Amazon>
   * Wait for the first search result to appear (path `.s-result-item[data-component-type="s-search-result"]`) and append the promotion panel.
   * Watch for changes to the results (using `MutationObserver`) and re-append the promotion panel.
 
- ## Notes
+## Notes
 
- * The changes have been tested on Chrome desktop only (mobile device widths).
- * The changes are only activated on the URLs listed in the instructions. In a production test, other variants of the URL might need to be taken into consideration.
- * For challenge 1, changing the quantity using the existing drop down initiates a form post to update delivery details. For the purposes of this challenge, this functionality has not been implemented. 
+* The changes have been tested on Chrome desktop only (mobile device widths <= 414px).
+* The changes are only activated for initial device widths of <= 414px. In a production test, this might be determined by the test audience in an optimisation tool.
+* The changes are only activated on the URLs listed in the instructions. In a production test, other variants of the URL might need to be taken into consideration.
+* For challenge 1, changing the quantity using the existing drop down initiates a form post to update delivery details. For the purposes of this challenge, this functionality has not been implemented.
+ 

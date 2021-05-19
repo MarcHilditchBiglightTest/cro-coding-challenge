@@ -2,6 +2,7 @@
 $promotion-text-color: #fff;
 $promotion-background-color: #000;
 $promotion-highlight-color: #e67a00;
+$breakpoint-mobile: 415px;
 
 .challenge-2 {
 
@@ -39,4 +40,11 @@ $promotion-highlight-color: #e67a00;
     
 }
 
+@media (min-width: $breakpoint-mobile) {
+    .challenge-2 {
+        &__promotion {
+            display: none;
+        }
+    }      
+}
 

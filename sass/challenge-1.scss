@@ -1,5 +1,6 @@
 
 $dialog-background-color: #37475A;
+$breakpoint-mobile: 415px;
 
 .challenge-1 {
 
@@ -33,4 +34,13 @@ $dialog-background-color: #37475A;
     }
 
 }
+
+@media (min-width: $breakpoint-mobile) {
+    .challenge-1 {
+        &__add-to-cart {
+            display: none;
+        }
+    }      
+}
+
 

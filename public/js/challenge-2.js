@@ -1,6 +1,8 @@
 (function () {
 
-    initialise();
+    if (window.screen.width <= 414) {
+        initialise();
+    }
 
     function initialise() {
         waitForElement('.s-main-slot.s-search-results').then(function (el) {
