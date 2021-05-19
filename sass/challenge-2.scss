@@ -1,0 +1,42 @@
+
+$promotion-text-color: #fff;
+$promotion-background-color: #000;
+$promotion-highlight-color: #e67a00;
+
+.challenge-2 {
+
+    &__promotion {
+        width: 98%;
+        color: $promotion-text-color;
+        background-color: $promotion-background-color;
+        margin: 0 auto 5px;
+        padding: 20px 30px;
+        border-radius: 3px;
+        text-align: center;
+        
+        h4 {
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+        }
+
+        p:first-of-type {
+            font-size: 1.4rem;
+            padding: 10px 0 0;
+        }
+
+        p:last-of-type {
+            font-size: 1.1rem;
+            font-style: italic;
+            padding: 0;
+        }
+
+        em {
+            color: $promotion-highlight-color;
+            font-style: normal;
+            text-decoration: underline;
+        }
+    }
+    
+}
+
+

@@ -1,0 +1,36 @@
+
+$dialog-background-color: #37475A;
+
+.challenge-1 {
+
+    &__add-to-cart {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        max-height: 80px;
+        background-color: $dialog-background-color;
+        z-index: 100;
+        transition: max-height 0.2s ease-in-out;
+
+        &--hidden {
+            max-height: 0px;
+            overflow-y: hidden;        
+        }
+    }
+
+    &__add-to-cart-inner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 10px;
+    }
+
+   &__quantity-selector {
+        margin-right: 20px;
+        height: 4.5rem;
+        padding-right: 5px;
+    }
+
+}
+
